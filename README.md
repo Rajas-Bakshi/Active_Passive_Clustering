@@ -10,4 +10,4 @@ $sudo passwd root
 You can confirm changes by using the command below
 ```console
 $su -
-'''
+```
