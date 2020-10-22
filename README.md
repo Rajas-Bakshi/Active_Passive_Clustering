@@ -38,7 +38,7 @@ This file will install and configure following things:
 
 This step will ask you to enter you VM number in order to Replace the default page of Nginx with a unique page
 Please see the below image for your reference.
-![Image](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/Images/Hosts.PNG?raw=true)
+![Image](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/Images/VM_Number.png?raw=true)
 
 
 ### Step 3 
@@ -68,4 +68,4 @@ This file will install and configure following things:
 * Start pacemaker
 
 Now check the crm status with `crm status` it should look like image below:
-![Image](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/Images/Hosts.PNG?raw=true)
+![Image](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/Images/CRM_status.PNG?raw=true)
