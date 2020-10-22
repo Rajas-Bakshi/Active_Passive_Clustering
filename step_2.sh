@@ -27,4 +27,4 @@ sleep 3
 service corosync stop
 sleep 2
 service pacemaker stop
-echo "xxxxxxxxxxxxxxxxxxxxxxxxx Move to Step 4 on your VM 1 xxxxxxxxxxxxxxxxxxxxxxxxx"
+echo "xxxxxxxxxxxxxxxxxxxxxxxxx Move to Step 3 on your VM 1 xxxxxxxxxxxxxxxxxxxxxxxxx"
