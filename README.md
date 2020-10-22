@@ -1,4 +1,4 @@
-# Active_Passive_Clustering
+# Installing Active Passive Cluster
 
 ### Step 1
 ##### Set root password will following commands:
@@ -35,6 +35,8 @@ This file will install and configure following things:
 * Install pacemaker 
 * Install corosync 
 * Install crmsh
+* Stops corosync 
+* Stops pacemaker 
 
 This step will ask you to enter you VM number in order to Replace the default page of Nginx with a unique page
 Please see the below image for your reference.
@@ -50,7 +52,7 @@ This file will install and configure following things:
 * Download haveged
 * Generate Corosync key 
 * Take backup of default configuration file
-* Replace it with new [config file](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/corosync.conf)
+* Replace old configuration file with new [configuration file](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/corosync.conf)
 
 Once the above script has completed its operation copy the keys and other configuration files to VMs using scp(root user)
 The same can be done using below command..
@@ -69,3 +71,21 @@ This file will install and configure following things:
 
 Now check the crm status with `crm status` it should look like image below:
 ![Image](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/Images/CRM_status.PNG?raw=true)
+
+ ### Step 5 
+Run the shell file step_5 by `./step_5.sh`
+
+*Note: Run on VM 1 only*
+
+This file will install and configure following things:
+* Disables stonith
+* Ignores quorum-policy
+* Adds resource virtual_ip
+* Adds resource webserver
+* Adds resourses in desired group
+
+Status of CRM resources can be checked by using `crm resource status` ideal output should be:
+![Image](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/Images/CRM_resourse_status.PNG?raw=true)
+
+Status of cluster can be checked by using `crm cluster status` ideal output should be:
+![Image](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/Images/CRM_cluster_status.PNG?raw=true)
