@@ -82,7 +82,7 @@ This file will install and configure following things:
 * Ignores quorum-policy
 * Adds resource virtual_ip
 * Adds resource webserver
-* Adds resourses in desired group
+* Adds resources in desired group
 
 Status of CRM resources can be checked by using `crm resource status` ideal output should be:
 ![Image](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/Images/CRM_resourse_status.PNG?raw=true)
