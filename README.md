@@ -76,13 +76,13 @@ Now check the crm status with `crm status` it should look like image below:
 Run the shell file step_5 by `./step_5.sh`
 
 *Note: Run on VM 1 only*
-
+[.](www.google.com)
 This file will install and configure following things:
 * Disables stonith
 * Ignores quorum-policy
 * Adds resource virtual_ip
 * Adds resource webserver
-* Adds resources in desired group
+* Adds resources in desired group 
 
 Status of CRM resources can be checked by using `crm resource status` ideal output should be:
 ![Image](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/Images/CRM_resourse_status.PNG?raw=true)
