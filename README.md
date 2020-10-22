@@ -1,24 +1,24 @@
 # Active_Passive_Clustering
 
 ### Step 1
-#####Set root password will following commands:
+##### Set root password will following commands:
 ```console
 $sudo passwd root
 ```
 *Note : Do not forget the password*
 
-#####You can confirm changes by using the command below
+##### You can confirm changes by using the command below
 ```console
 $su -
 ```
-#####Enable **root** login for SSH in `/etc/ssh/sshd_config`
+##### Enable **root** login for SSH in `/etc/ssh/sshd_config`
 Find `PermitRootLogin without-password` under `Authentication` and replace it with `PermitRootLogin yes`
 
-#####Add all host names under `/etc/hosts` as shown in below figure. 
+##### Add all host names under `/etc/hosts` as shown in below figure. 
 
 ![Image](https://github.com/Rajas-Bakshi/Active_Passive_Clustering/blob/main/Images/Hosts.PNG?raw=true)
 
-#####Switch to super user by using command 
+##### Switch to super user by using command 
 ```
 $Sudo su
 ```
