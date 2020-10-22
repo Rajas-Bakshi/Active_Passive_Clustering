@@ -1,4 +1,5 @@
 echo  "xxxxxxxxxxxxxxxxxxxxxxxx Updating packages xxxxxxxxxxxxxxxxxxxxxxxx"
+chmod 777 ./*
 sleep 3
 sudo apt-get update
 sudo apt-get upgrade -y
