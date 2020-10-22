@@ -8,7 +8,7 @@ then
 	sleep 3
 	crm configure property stonith-enabled=false
 	crm configure property no-quorum-policy=ignore
-	echo "xxxxxxxxxxxxxxxxxxxxxxxxx Adding Resourses to the cluster xxxxxxxxxxxxxxxxxxxxxxxxx"
+	echo "xxxxxxxxxxxxxxxxxxxxxxxxx Adding Resources to the cluster xxxxxxxxxxxxxxxxxxxxxxxxx"
 	sleep 3
 	crm configure primitive virtual_ip ocf:heartbeat:IPaddr2 params ip="10.0.2.100" cidr_netmask="32" op monitor interval="10s" meta migration-threshold="10"
 	crm configure primitive webserver ocf:heartbeat:nginx configfile=/etc/nginx/nginx.conf op start timeout="40s" interval="0" op stop timeout="60s" interval="0" op monitor interval="10s" timeout="60s" meta migration-threshold="10"
